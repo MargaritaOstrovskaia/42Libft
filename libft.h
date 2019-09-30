@@ -94,5 +94,12 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 char				*ft_strndup(const char *s1, int n);
 int					ft_isws(char ch);
 int					ft_getlcount(int n);
+void				ft_isort(void *adr, int len, int tsize, int isasd);
+void				ft_bsort(void *adr, int len, int tsize, int isasd);
+void				ft_ssort(void *adr, int len, int tsize, int isasd);
+int					ft_vcmp(void *c1, void *c2, int tsize, int isasd);
+void				ft_vswap(void *c1, void *c2, int tsize);
+t_list				*ft_lstfind(t_list *begin, void *data, int (*cmp)());
+void				ft_lstprint(t_list *lst);
 
 #endif

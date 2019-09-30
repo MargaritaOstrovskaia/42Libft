@@ -16,7 +16,9 @@ SOURCES=ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c \
 	ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 	ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c \
 	ft_lstiter.c ft_lstmap.c \
-	ft_strndup.c ft_isws.c ft_getlcount.c
+	ft_strndup.c ft_isws.c ft_getlcount.c \
+	ft_bsort.c ft_isort.c ft_ssort.c \
+	ft_vcmp.c ft_vswap.c ft_lstfind.c ft_lstprint.c
 OBJECTS=$(SOURCES:.c=.o)
 INCLUDES = -I libft.h
 
