@@ -13,9 +13,13 @@
 #ifndef FT_LIBFT_H
 # define FT_LIBFT_H
 
+# define BUFF_SIZE 8
+# define FD_SIZE 4096
+
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <fcntl.h>
 
 typedef struct		s_list
 {
@@ -101,5 +105,6 @@ int					ft_vcmp(void *c1, void *c2, int tsize, int isasd);
 void				ft_vswap(void *c1, void *c2, int tsize);
 t_list				*ft_lstfind(t_list *begin, void *data, int (*cmp)());
 void				ft_lstprint(t_list *lst);
+int					get_next_line(const int fd, char **line);
 
 #endif
